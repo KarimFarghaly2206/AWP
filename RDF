@@ -1,0 +1,508 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/AWP#"
+     xml:base="http://www.semanticweb.org/AWP"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/AWP"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/AWP#AssignedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/AWP#AssignedTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/AWP#Constraint"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/AWP#Contractor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/AWP#containsZone -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/AWP#containsZone">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/AWP#Zone"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/AWP#Zone"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/AWP#hasBuilding -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/AWP#hasBuilding">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/AWP#containsZone"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/AWP#Zone"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Farghaly/CPC0ntology#Building"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/AWP#hasCWA -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/AWP#hasCWA">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/AWP#hasProjectID"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/AWP#CWP"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/AWP#CWA"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/AWP#hasCWP -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/AWP#hasCWP">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/AWP#hasProjectID"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/AWP#Activity"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/AWP#Contractor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/AWP#ShipmentID"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/AWP#CWP"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/AWP#hasContractor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/AWP#hasContractor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/AWP#Activity"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/AWP#CWP"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/AWP#EWP"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/AWP#IWP"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/AWP#ShipmentID"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/AWP#Contractor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/AWP#hasDiscpline -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/AWP#hasDiscpline">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/AWP#hasProjectID"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/AWP#CWP"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/AWP#Contractor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/AWP#EWP"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/AWP#IWP"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/AWP#ShipmentID"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Farghaly/CPC0ntology#Discpline"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/AWP#hasEWP -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/AWP#hasEWP">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/AWP#hasProjectID"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/AWP#Activity"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/AWP#EWP"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/AWP#hasElement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/AWP#hasElement">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/AWP#Zone"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/AWP#Element"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/AWP#containsZone"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/AWP#hasElement"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/AWP#hasIWP -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/AWP#hasIWP">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/AWP#hasProjectID"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/AWP#Activity"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/AWP#IWP"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/AWP#hasPackage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/AWP#hasPackage">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/AWP#Constraint"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/AWP#Package"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/AWP#hasParentActivity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/AWP#hasParentActivity">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/AWP#Activity"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/AWP#Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/AWP#hasProjectID -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/AWP#hasProjectID">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/AWP#Activity"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/AWP#CWA"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/AWP#CWP"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/AWP#Constraint"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/AWP#Contractor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/AWP#Document_Number"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/AWP#EWP"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/AWP#IWP"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/AWP#ShipmentID"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Farghaly/CPC0ntology#Milestone"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/AWP#Project_ID"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/AWP#hasProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/AWP#hasProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/AWP#Document_Number"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/AWP#Document_File_Type"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/AWP#Document_Status"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/AWP#Document_Type"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/AWP#Package"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/AWP#hasSpace -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/AWP#hasSpace">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/AWP#containsZone"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/AWP#Zone"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Farghaly/CPC0ntology#Space"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/AWP#hasStorey -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/AWP#hasStorey">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/AWP#containsZone"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/AWP#Zone"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Farghaly/CPC0ntology#Storey"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/AWP#hasWBS -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/AWP#hasWBS">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/AWP#hasParentActivity"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/AWP#Activity"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/AWP#WBS"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/AWP#hasZone -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/AWP#hasZone">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/AWP#containsZone"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/AWP#CWA"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/AWP#Zone"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/AWP#Has_Description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/AWP#Has_Description">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/AWP#Package"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/AWP#Activity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AWP#Activity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/AWP#Schedule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/AWP#CWA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AWP#CWA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/AWP#Package"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/AWP#CWP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AWP#CWP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/AWP#Package"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/AWP#Constraint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AWP#Constraint"/>
+    
+
+
+    <!-- http://www.semanticweb.org/AWP#Contractor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AWP#Contractor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/AWP#Procurement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/AWP#Document -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AWP#Document"/>
+    
+
+
+    <!-- http://www.semanticweb.org/AWP#Document_File_Type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AWP#Document_File_Type">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/AWP#Document"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/AWP#Document_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/AWP#Document_Number -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AWP#Document_Number">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/AWP#Document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/AWP#Document_Status -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AWP#Document_Status">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/AWP#Document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/AWP#Document_Type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AWP#Document_Type">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/AWP#Document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/AWP#EWP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AWP#EWP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/AWP#Package"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/AWP#Element -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AWP#Element"/>
+    
+
+
+    <!-- http://www.semanticweb.org/AWP#IWP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AWP#IWP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/AWP#Package"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/AWP#Package -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AWP#Package"/>
+    
+
+
+    <!-- http://www.semanticweb.org/AWP#Procurement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AWP#Procurement"/>
+    
+
+
+    <!-- http://www.semanticweb.org/AWP#Project_ID -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AWP#Project_ID">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/AWP#Package"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/AWP#Schedule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AWP#Schedule"/>
+    
+
+
+    <!-- http://www.semanticweb.org/AWP#ShipmentID -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AWP#ShipmentID">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/AWP#Shipment/Delivery"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/AWP#WBS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AWP#WBS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/AWP#Schedule"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/Farghaly/CPC0ntology#Milestone"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/AWP#Zone -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AWP#Zone"/>
+    
+
+
+    <!-- http://www.semanticweb.org/AWP#Shipment/Delivery -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AWP#Shipment/Delivery">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/AWP#Procurement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Farghaly/CPC0ntology#Building -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Farghaly/CPC0ntology#Building">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/AWP#Zone"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Farghaly/CPC0ntology#Discpline -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Farghaly/CPC0ntology#Discpline">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/AWP#Package"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Farghaly/CPC0ntology#Milestone -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Farghaly/CPC0ntology#Milestone">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/AWP#Schedule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Farghaly/CPC0ntology#Site -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Farghaly/CPC0ntology#Site">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/AWP#Zone"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Farghaly/CPC0ntology#Space -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Farghaly/CPC0ntology#Space">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/AWP#Zone"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Farghaly/CPC0ntology#Storey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Farghaly/CPC0ntology#Storey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/AWP#Zone"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/AWP#CWA"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/AWP#CWP"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/AWP#EWP"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/AWP#IWP"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/AWP#Project_ID"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Farghaly/CPC0ntology#Discpline"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/AWP#CWA"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/AWP#CWP"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/AWP#EWP"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/AWP#IWP"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Farghaly/CPC0ntology#Discpline"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/Farghaly/CPC0ntology#Building"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Farghaly/CPC0ntology#Site"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Farghaly/CPC0ntology#Space"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Farghaly/CPC0ntology#Storey"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
