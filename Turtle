@@ -1,0 +1,1524 @@
+@prefix : <http://www.semanticweb.org/AWP#> .
+@prefix S: <http://www.semanticweb.org/asus/ontologies/2016/5/untitled-ontology-13#S'> .
+@prefix a: <http://www.s.f.org/lex/type/clause/> .
+@prefix b: <http://www.s.f.org/perf/imposer/> .
+@prefix c: <http://www.s.f.org/lex/spec/> .
+@prefix d: <http://www.s.f.org/situation/conclure/> .
+@prefix e: <http://www.s.f.org/role/partie_contractante/> .
+@prefix g: <http://www.s.f.org/sit/exercer/action> .
+@prefix o: <urn:schemas-microsoft-com:office:office> .
+@prefix s: <http://schema.org/> .
+@prefix w: <http://www.s.f.org/sit/act/> .
+@prefix x: <http://www.s.f.org/perf/notion/> .
+@prefix z: <http://www.s.f.org/perf/> .
+@prefix GC: <http://www.semanticweb.org/stefanycÃ¡rdenas/ontologies/2020/8/GC#> .
+@prefix MF: <http://purl.obolibrary.org/obo/MF#> .
+@prefix MO: <http://lapd.pt/myOntology.owl#> .
+@prefix TT: <http://www.it2rail.eu/ontology/TT#> .
+@prefix WV: <http://www.wurvoc.org/vocabularies/WV/> .
+@prefix ab: <http://www.s.f.org/prod/reglementation/> .
+@prefix ac: <http://www.s.f.org/lex/type/clause/> .
+@prefix an: <http://www.it2rail.eu/ontology/annotation#> .
+@prefix at: <http://publications.europa.eu/ontology/authority/> .
+@prefix bd: <http://www.bigdata.com/rdf#> .
+@prefix bp: <http://www.biopax.org/release/biopax-level3.owl#> .
+@prefix cc: <http://web.resource.org/cc/> .
+@prefix cd: <http://www.recshop.fake/cd#> .
+@prefix ci: <https://www.oscinema.com.sg/cinema#> .
+@prefix cp: <http://www.ontologydesignpatterns.org/cp/owl/partof.owl#> .
+@prefix d0: <http://www.ontologydesignpatterns.org/ont/d0.owl#> .
+@prefix da: <http://www.s.f.org/perf/reg/> .
+@prefix db: <http://localhost:2020/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dl: <http://dl-learner.org/benchmark/dataset/animals/> .
+@prefix en: <http://www.enseignement.org#> .
+@prefix ex: <http://example.com/ns#> .
+@prefix fc: <myprefix> .
+@prefix fm: <https://www.oscinema.com.sg/week3#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix gc: <http://www.s.f.org/sit/> .
+@prefix gf: <http://www.gra.fo/schema/untitled-ekg#> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix go: <http://purl.obolibrary.org/obo/go#> .
+@prefix gr: <http://purl.org/goodrelations/v1#> .
+@prefix hp: <http://purl.obolibrary.org/obo/hp#> .
+@prefix ic: <http://ontology.eil.utoronto.ca/tove/icontact#> .
+@prefix id: <http://www.it2rail.eu/ontology/identifiers#> .
+@prefix kd: <http://oziz.ffos.hr/kdjurdjevic/dk-ontologija#> .
+@prefix l0: <https://w3id.org/italia/onto/l0/> .
+@prefix lu: <http://purl.org/dc/terms> .
+@prefix mf: <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix mv: <http://schema.mobivoc.org/#> .
+@prefix ns: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix od: <urn:schemas-microsoft-com:officedata> .
+@prefix om: <http://www.wurvoc.org/vocabularies/om-1.8/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix p1: <hhtp://localhost/Institute#> .
+@prefix pr: <http://purl.obolibrary.org/obo/pr#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix qu: <http://purl.org/NET/ssnx/qu/qu#> .
+@prefix rd: <https://cntic10.hit.bme.hu/do/network_model/raw/master/examples/example2/compact/routed_paths2.rdf#> .
+@prefix ro: <http://purl.org/roh/mirror/obo/ro#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix sc: <http://purl.org/science/owl/sciencecommons/> .
+@prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
+@prefix sf: <http://www.opengis.net/ont/sf#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix si: <https://www.Healthcare.com/rdf/> .
+@prefix sp: <http://spinrdf.org/sp#> .
+@prefix sr: <http://www.w3.org/ns/sosa/sampling/> .
+@prefix ss: <urn:schemas-microsoft-com:office:spreadsheet> .
+@prefix st: <https://www.oscinema.com.sg/cinema#> .
+@prefix sw: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix th: <http://wissensgraph.informatik.fh-nuernberg.de#> .
+@prefix ub: <http://swat.cse.lehigh.edu/onto/univ-bench.owl#> .
+@prefix uo: <http://purl.obolibrary.org/obo/uo#> .
+@prefix v0: <http://ethon.consensys.net/v0/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix wk: <https://www.oscinema.com.sg/cinema#> .
+@prefix wn: <http://xmlns.com/wordnet/1.6/> .
+@prefix wv: <http://www.wurvoc.org/vocabularies/WV/> .
+@prefix xf: <http://www.w3.org/2004/07/xpath-functions> .
+@prefix xs: <http://www.w3.org/2001/XMLSchema> .
+@prefix DUL: <https://lp.sekai.dev/upper/sekai-upper-ontology#> .
+@prefix NS0: <http://lonely.org/russia#> .
+@prefix OWL: <http://www.w3.org/2002/07/owl#> .
+@prefix RID: <http://radlex.org/RID/> .
+@prefix SEG: <http://www.outreach.io/SEG#> .
+@prefix act: <http://ontology.eil.utoronto.ca/tove/activity#> .
+@prefix air: <http://www.megginson.com/exp/ns/airports#> .
+@prefix aml: <https://w3id.org/i40/aml#> .
+@prefix api: <http://purl.org/linked-data/api/vocab#> .
+@prefix app: <http://www.opengis.net/citygml/appearance/2.0/> .
+@prefix arg: <http://spinrdf.org/arg#> .
+@prefix atm: <https://data.nasa.gov/ontologies/atmonto/ATM#> .
+@prefix bds: <http://www.bigdata.com/rdf/search#> .
+@prefix bfo: <http://www.ifomis.org/bfo/1.1#> .
+@prefix bio: <http://purl.org/vocab/bio/0.1/> .
+@prefix bot: <https://w3id.org/bot#> .
+@prefix bto: <http://purl.obolibrary.org/obo/bto#> .
+@prefix cav: <http://ontology.eil.utoronto.ca/CAO/cav#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix cdt: <http://w3id.org/lindt/custom_datatypes#> .
+@prefix cim: <http://iec.ch/TC57/CIM100#> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix csw: <http://semantic-web.at/ontologies/csw.owl#> .
+@prefix cyc: <http://sw.cyc.com/concept/> .
+@prefix dbc: <http://dbpedia.org/resource/Category:> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbp: <http://dbpedia.org/property/> .
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix dce: <http://purl.org/dc/elements/1.1/> .
+@prefix dcr: <http://www.isocat.org/ns/dcr.rdf#> .
+@prefix dct: <http://purl.org/dc/terms> .
+@prefix dei: <http://www.elet.polimi.it#> .
+@prefix dem: <http://www.opengis.net/citygml/relief/2.0/> .
+@prefix dgu: <http://reference.data.gov.uk/def/reference/> .
+@prefix dii: <urn:mpeg:mpeg21:2002:01-DII-NS#> .
+@prefix doc: <http://www.w3.org/2000/10/swap/pim/doc#> .
+@prefix doe: <tag:example> .
+@prefix dos: <https://mohamed.eldesouki.ca/rdf#> .
+@prefix dpv: <http://w3.org/ns/dpv#> .
+@prefix dto: <http://www.drugtargetontology.org/dto/> .
+@prefix dul: <http://www.loa.istc.cnr.it/ontologies/DUL.owl#> .
+@prefix dwc: <http://rs.tdwg.org/dwc/terms/> .
+@prefix ecc: <https://ns.eccenca.com/> .
+@prefix eco: <http://www.ebusiness-unibw.org/ontologies/eclass/5.1.4/#> .
+@prefix efo: <http://www.ebi.ac.uk/efo/> .
+@prefix eks: <https://www.alfabank.ru/ontology/eks20#> .
+@prefix epo: <http://data.europa.eu/a4d#> .
+@prefix eqp: <https://data.nasa.gov/ontologies/atmonto/equipment#> .
+@prefix fam: <http://www.ifi.uio.no/IN3060/family#> .
+@prefix fma: <http://purl.obolibrary.org/obo/fma#> .
+@prefix fno: <https://w3id.org/function/ontology#> .
+@prefix foo: <http://geneontology.org/foo/> .
+@prefix frn: <http://www.opengis.net/citygml/cityfurniture/2.0/> .
+@prefix fun: <http://w3id.org/sparql-generate/fn/> .
+@prefix gco: <http://www.isotc211.org/2005/gco> .
+@prefix gen: <http://www.opengis.net/citygml/generics/2.0/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix gis: <http://www.opengis.net/ont/geosparql#> .
+@prefix gml: <http://www.opengis.net/gml/> .
+@prefix got: <http://www.polymtl.ca/got#> .
+@prefix grp: <http://www.opengis.net/citygml/cityobjectgroup/2.0/> .
+@prefix gsr: <http://www.isotc211.org/2005/gsr> .
+@prefix gss: <http://www.isotc211.org/2005/gss> .
+@prefix gts: <http://www.isotc211.org/2005/gts> .
+@prefix hfp: <http://www.w3.org/2001/XMLSchema-hasFacetAndProperty> .
+@prefix hl7: <http://hl7.org/ontology/metadata#> .
+@prefix hls: <#> .
+@prefix hp2: <http://purl.obolibrary.org/obo/hp.owl#> .
+@prefix hps: <urn:absolute://harbourpolitica/ontology/StoryUniverse/> .
+@prefix i72: <http://ontology.eil.utoronto.ca/ISO21972/iso21972#> .
+@prefix iao: <http://purl.org/roh/mirror/obo/iao#> .
+@prefix ids: <https://w3id.org/idsa/core/> .
+@prefix ind: <http://manusquare.project.eu/industrial-manusquare#> .
+@prefix iri: <http://www.semanticweb.org/avrahim/ontologies/2020/7/untitled-ontology-9#> .
+@prefix isq: <http://emmo.info/emmo/middle/isq#> .
+@prefix j.0: <http://www.w3.org/2006/vcard/ns#> .
+@prefix j.1: <http://ontologydesignpatterns.org/cp/owl/semiotics.owl#> .
+@prefix j.2: <http://schema.org/> .
+@prefix j.3: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix j.4: <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#> .
+@prefix j.5: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix j.6: <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#> .
+@prefix j.7: <http://www.essepuntato.it/2008/12/earmark#> .
+@prefix j.8: <http://www.ontologydesignpatterns.org/ont/boxer/boxer.owl#> .
+@prefix j.9: <http://www.ontologydesignpatterns.org/ont/vn/abox/role/> .
+@prefix jcl: <http://jocondelab.iri-research.org/ns/jocondelab/> .
+@prefix jms: <http://jena.hpl.hp.com/2003/08/jms#> .
+@prefix lci: <http//www.lacucinaitaliana.com/recipe/> .
+@prefix lcx: <http://www.i2group.com/Schemas/2001-12-07/LCXSchema> .
+@prefix ldp: <http://www.w3.org/ns/ldp#> .
+@prefix lib: <http://www.m2.as.u.like/myTerms/> .
+@prefix lis: <http://standards.iso.org/iso/15926/part14/> .
+@prefix lit: <http://literature.org/#> .
+@prefix loc: <http://simile.mit.edu/2005/05/ontologies/location#> .
+@prefix log: <http://example.org/ont/transaction-log/> .
+@prefix map: <http://localhost:2020/#> .
+@prefix mfg: <http://www.workingontologist.org/Examples/Chapter3/Product.owl#> .
+@prefix mld: <http://mld.ace.fordham.edu/mld> .
+@prefix mo2: <http://www.movieontology.org/2009/11/09/movieontology.owl#> .
+@prefix mob: <http://www.it2rail.eu/ontology/mobility#> .
+@prefix mod: <http://www.isibang.ac.in/mod/ns#> .
+@prefix mso: <http://linkeddata.uni-muenster.de/ontology/musicscore#> .
+@prefix muo: <http://purl.oclc.org/NET/muo/muo#> .
+@prefix mus: <http://data.doremus.org/ontology#> .
+@prefix mvo: <http://www.semanticweb.org/nataraj.bukkambudi/ontologies/2020/2/voyager_ontology.owl#mvo:> .
+@prefix nas: <https://data.nasa.gov/ontologies/atmonto/NAS#> .
+@prefix nbo: <http://purl.obolibrary.org/obo/nbo.owl#> .
+@prefix nci: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+@prefix nml: <https://cntic10.hit.bme.hu/do/network_model/raw/master/ontology/nml-base.owl#> .
+@prefix npg: <http://ns.nature.com/terms/> .
+@prefix ns0: <http://owl.man.ac.uk/2006/07/sssw/people#> .
+@prefix ns1: <http://www.w3.org/2002/07/owl#> .
+@prefix ns2: <http://www.i2group.com/Schemas/2011-03-03/ModelSchema> .
+@prefix ns3: <http://www.i2group.com/Schemas/2011-03-03/ModelSchemaExtension> .
+@prefix ns4: <http://dbpedia.org/ontology/Lake/> .
+@prefix ns5: <http://dbpedia.org/ontology/Weapon/> .
+@prefix ns6: <http://creativecommons.org/ns#> .
+@prefix ns7: <http://dbpedia.org/ontology/MeanOfTransportation/> .
+@prefix ns8: <http://open.vocab.org/terms/> .
+@prefix ns9: <http://mappings.dbpedia.org/index.php/OntologyProperty:> .
+@prefix obo: <http://www.geneontology.org/formats/oboInOwl#http://purl.obolibrary.org/obo/> .
+@prefix oeo: <http://openenergy-platform.org/ontology/oeo/> .
+@prefix ogc: <http://www.opengis.net/> .
+@prefix ogr: <http://ogr.maptools.org/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix ont: <http://www.co-ode.org/ontologies/ont.owl#> .
+@prefix opt: <http://www.adeptik.com/optimistics#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix oro: <http://kb.openrobots.org#> .
+@prefix otn: <http://www.pms.ifi.uni-muenchen.de/OTN#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix pay: <http://www.it2rail.eu/ontology/payment#> .
+@prefix pim: <http://www.w3.org/2000/10/swap/pim/contact#> .
+@prefix pod: <https://project-open-data.cio.gov/v1.1/schema/> .
+@prefix qdr: <http://data.europa.eu/esco/qdr#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rel: <http://purl.org/vocab/relationship/> .
+@prefix rev: <http://purl.org/stuff/rev#> .
+@prefix rim: <http://hl7.org/fhir/rim/> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rov: <http://www.w3.org/ns/regorg#> .
+@prefix rss: <http://purl.org/rss/1.0/> .
+@prefix rut: <http://rdfunit.aksw.org/ns/core#> .
+@prefix sc1: <https://www.oscinema.com.sg/cinema/Screen1#> .
+@prefix sc2: <https://www.oscinema.com.sg/cinema/Screen2#> .
+@prefix sc3: <https://www.oscinema.com.sg/cinema/Screen3#> .
+@prefix sch: <http://schema.org/> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix scv: <http://purl.org/NET/scovo#> .
+@prefix sdg: <http://purl.unep.org/sdg/> .
+@prefix sdo: <http://schema.org#> .
+@prefix sfn: <http://www.w3.org/ns/sparql#> .
+@prefix sim: <http://www.ifi.uio.no/INF3580/simpsons#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix spl: <http://www.specialprivacy.eu/langs/usage-policy#> .
+@prefix spo: <http://ontologies.schneider-electric.com/spo#> .
+@prefix srv: <http://example.org/data/server/> .
+@prefix ssn: <https://www.w3.org/ns/ssn/> .
+@prefix st1: <https://www.oscinema.com.sg/cinema/showtime/slot1#> .
+@prefix st2: <https://www.oscinema.com.sg/cinema/showtime/slot2#> .
+@prefix st3: <https://www.oscinema.com.sg/cinema/showtime/slot3#> .
+@prefix std: <urn:IEEE-1641:2010:STDBSC> .
+@prefix sto: <https://ken.baclawski.com/STO#> .
+@prefix stx: <http://purl.org/cyber/stix#> .
+@prefix sub: <localhost:25565/Rights-Sub-Provisions> .
+@prefix svd: <http://www.specialprivacy.eu/vocabs/data#> .
+@prefix swc: <http://schema.semantic-web.at/ppt/> .
+@prefix swo: <http://www.ebi.ac.uk/swo/> .
+@prefix tag: <https://brickschema.org/schema/1.1/BrickTag#> .
+@prefix tex: <http://www.opengis.net/citygml/texturedsurface/2.0/> .
+@prefix th1: <https://www.oscinema.com.sg/cinema/Week1/theme1/Screen3#> .
+@prefix th2: <https://www.oscinema.com.sg/cinema/Week1/theme2/Screen3#> .
+@prefix th3: <https://www.oscinema.com.sg/cinema/Week1/theme3/Screen3#> .
+@prefix th4: <https://www.oscinema.com.sg/cinema/Week2/theme1/Screen3#> .
+@prefix th5: <https://www.oscinema.com.sg/cinema/Week2/theme2/Screen3#> .
+@prefix th6: <https://www.oscinema.com.sg/cinema/Week2/theme3/Screen3#> .
+@prefix th7: <https://www.oscinema.com.sg/cinema/Week3/theme1/Screen3#> .
+@prefix th8: <https://www.oscinema.com.sg/cinema/Week3/theme2/Screen3#> .
+@prefix th9: <https://www.oscinema.com.sg/cinema/Week3/theme3/Screen3#> .
+@prefix tim: <https://www.w3.org/People/Berners-Lee/> .
+@prefix tm1: <https://www.oscinema.com.sg/cinema/Week1#> .
+@prefix tm2: <https://www.oscinema.com.sg/cinema/Week2#> .
+@prefix tm3: <https://www.oscinema.com.sg/cinema/Week3#> .
+@prefix top: <http://www.estrellaproject.org/lkif-core/lkif-top.owl#> .
+@prefix tro: <http://li-st.com/tro/> .
+@prefix tsf: <urn:IEEE-1641:2010:STDTSF> .
+@prefix tsl: <http://www.Cproject.at/warehouse> .
+@prefix tun: <http://www.opengis.net/citygml/tunnel/2.0/> .
+@prefix tvc: <http://www.essepuntato.it/2012/04/tvc/> .
+@prefix txn: <http://example.org/data/transaction/> .
+@prefix uco: <http://purl.org/cyber#> .
+@prefix ufo: <http://onto.fel.cvut.cz/ontologies/ufo/> .
+@prefix uld: <https://onerecord.iata.org/Uld#> .
+@prefix uml: <http://www.eclipse.org/uml2/5.0.0/UML> .
+@prefix uni: <http://www.mydomain.org/uni-ns/> .
+@prefix uom: <http://www.opengis.net/def/uom/OGC/1.0/> .
+@prefix urn: <http://www.w3.org/urn> .
+@prefix v4e: <http://bdi.si.ehu.es/bdi/ontologies/extrusion/visualization4ExtruOnt#> .
+@prefix veg: <http://www.opengis.net/citygml/vegetation/2.0/> .
+@prefix ver: <http://w3id.org/version/ontology> .
+@prefix vin: <http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#> .
+@prefix voc: <http://www.unice.fr/voc#> .
+@prefix vra: <http://purl.org/vra/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix wot: <http://xmlns.com/wot/0.1/> .
+@prefix wtr: <http://www.opengis.net/citygml/waterbody/2.0/> .
+@prefix www: <http://www.referent-tracking.com/> .
+@prefix xhv: <http://www.w3.org/1999/xhtml/vocab#> .
+@prefix xmi: <http://www.omg.org/XMI> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsi: <http://www.w3.org/2001/XMLSchema-instance> .
+@prefix xsp: <http://www.owl-ontologies.com/2005/08/07/xsp.owl#> .
+@prefix zoo: <http://example.org/zoo/> .
+@prefix Cibo: <http://almawave.it/ontologies/2020/01/09/Cibo#> .
+@prefix PPEO: <http://purl.org/ppeo/PPEO.owl#> .
+@prefix TEMP: <http://purl.obolibrary.org/obo/TEMP#> .
+@prefix Thin: <http://www.think-project.org/ThinkD#> .
+@prefix Xsam: <http://www.semanticweb.org/administrator/ontologies/2020/9/Xsam#> .
+@prefix adkd: <http://oziz.ffos.hr/aboras/ak-ontologija#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix aixm: <http://www.aixm.aero/schema/5.1> .
+@prefix area: <http://www.area.it/area#> .
+@prefix asit: <http://purl.org/asit/terms/> .
+@prefix base: <http://www.semanticweb.org/nelson/ontologies/2018/9/pep#> .
+@prefix bckm: <http://desiree-project.eu/bckm#> .
+@prefix bibo: <http://purl.org/roh/mirror/bibo#> .
+@prefix bido: <http://purl.org/spar/bido/> .
+@prefix bldg: <http://www.opengis.net/citygml/building/2.0/> .
+@prefix brid: <http://www.opengis.net/citygml/bridge/2.0/> .
+@prefix bsbm: <http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/> .
+@prefix cafo: <http://ontology.eil.utoronto.ca/CAO/cafo#> .
+@prefix caso: <http://www.w3id.org/def/caso#> .
+@prefix cell: <http://li-st.com/tro/cell/> .
+@prefix cims: <http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#> .
+@prefix cito: <http://purl.org/spar/cito/> .
+@prefix cmtp: <http://li-st.com/tro/comptype/> .
+@prefix conf: <http:conf/> .
+@prefix core: <http://purl.obolibrary.org/obo/core#> .
+@prefix cpev: <http://data.europa.eu/m8g/cpev#> .
+@prefix csdo: <http://www.csdo.org/2019/5/csdo#> .
+@prefix csvw: <http://www.w3.org/ns/csvw#> .
+@prefix ctag: <http://commontag.org/ns#> .
+@prefix ctro: <http://www.semanticweb.org/root/ontologies/2018/6/ctro#> .
+@prefix cwrc: <http://sparql.cwrc.ca/ontologies/cwrc#> .
+@prefix d2rq: <http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#> .
+@prefix daml: <http://www.daml.org/2001/03/daml+oil#> .
+@prefix data: <https://data.nasa.gov/ontologies/atmonto/data#> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcmi: <http://purl.org/dc/terms/> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix doid: <http://purl.obolibrary.org/obo/doid#> .
+@prefix dpmo: <http://www.semanticweb.org/ornei/ontologies/2019/10/dpmo#> .
+@prefix dram: <http://www.cesar/www.dramabase/ontology/> .
+@prefix dto1: <http://www.drugtargetontology.org/dto#> .
+@prefix dvtp: <http://li-st.com/tro/dbdrivertype/> .
+@prefix ecrm: <http://erlangen-crm.org/current/> .
+@prefix edmx: <http://docs.oasis-open.org/odata/ns/edmx> .
+@prefix elda: <http://www.epimorphics.com/vocabularies/lda#> .
+@prefix envo: <http://purl.obolibrary.org/obo/envo#> .
+@prefix epsg: <http://www.opengis.net/def/crs/EPSG/0/> .
+@prefix esco: <http://data.europa.eu/esco/model#> .
+@prefix exam: <http://www.cs.le.ac.uk/co7216/exam#> .
+@prefix exif: <http://www.w3.org/2003/12/exif/ns#> .
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix film: <http://www.semprog.com/film#> .
+@prefix fnml: <http://semweb.mmlab.be/ns/fnml#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix focu: <http://focu.io/schema#> .
+@prefix food: <http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#> .
+@prefix fort: <http://hadrianswall.squirrel.link/fort#> .
+@prefix geof: <http://www.opengis.net/def/function/geosparql/> .
+@prefix geos: <http://www.opengis.net/ont/geosparql#> .
+@prefix gist: <https://ontologies.semanticarts.com/gist/> .
+@prefix greg: <http://www.w3.org/ns/time/gregorian/> .
+@prefix gres: <http://genomic-resources.eu/resource/> .
+@prefix gtfs: <http://vocab.gtfs.org/terms#> .
+@prefix hint: <http://www.bigdata.com/queryHints#> .
+@prefix html: <http://www.w3.org/TR/REC-html40> .
+@prefix http: <http://> .
+@prefix idsc: <https://w3id.org/idsa/code/> .
+@prefix idsm: <https://w3id.org/idsa/metamodel/> .
+@prefix imdb: <http://www.imdb.com/> .
+@prefix inst: <http://manusquare.project.eu/instances-manusquare#/> .
+@prefix isbd: <http://iflastandards.info/ns/isbd/elements/> .
+@prefix item: <https://onerecord.iata.org/Item#> .
+@prefix iter: <http://w3id.org/sparql-generate/iter/> .
+@prefix itvi: <https://ont.itv.com/ids/> .
+@prefix itvo: <https://ont.itv.com/odrl/> .
+@prefix j.10: <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#> .
+@prefix j.11: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#%27> .
+@prefix j.12: <http://www.ontologydesignpatterns.org/ont/cnlp/coref.owl#> .
+@prefix j.13: <http://dbpedia.org/resource/Element_(mathematics)> .
+@prefix jerm: <http://www.mygrid.org.uk/ontology/JERMOntology#> .
+@prefix kids: <https://ken.baclawski.com/kids#> .
+@prefix km4c: <http://www.disit.org/km4city/schema#> .
+@prefix knox: <http://www.knoxwhatever.aau.dk/nordjyske/> .
+@prefix lang: <http://purl.org/net/inkel/rdf/schemas/lang/1.1#> .
+@prefix lcon: <http://www.w3.org/ns/locn#> .
+@prefix lgtp: <http://li-st.com/tro/languagetype/> .
+@prefix list: <http://www.co-ode.org/ontologies/list.owl#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix luse: <http://www.opengis.net/citygml/landuse/2.0/> .
+@prefix math: <http://www.w3.org/2000/10/swap/math#> .
+@prefix meme: <http://meme.schema.org/> .
+@prefix mesh: <https://meshb.nlm.nih.gov/record#> .
+@prefix misp: <http://purl.org/cyber/misp#> .
+@prefix mvco: <http://purl.oclc.org/NET/mvco.owl#> .
+@prefix myns: <http://www.dis.uniroma1.it/%7Erosati/semanticweb/> .
+@prefix ncit: <http://purl.obolibrary.org/obo/ncit#> .
+@prefix nerd: <http://nerd.eurecom.fr/ontology#> .
+@prefix nkos: <http://w3id.org/nkos/nkostype> .
+@prefix npgd: <http://ns.nature.com/datasets/> .
+@prefix npgg: <http://ns.nature.com/graphs/> .
+@prefix ns10: <http://dbpedia.org/datatype/> .
+@prefix ns11: <http://dbpedia.org/ontology/Automobile/> .
+@prefix ns12: <http://dbpedia.org/ontology/Canal/> .
+@prefix ns13: <http://dbpedia.org/ontology/ChemicalSubstance/> .
+@prefix ns14: <http://dbpedia.org/ontology/ConveyorSystem/> .
+@prefix ns15: <http://dbpedia.org/ontology/Drug/> .
+@prefix ns16: <http://dbpedia.org/ontology/Escalator/> .
+@prefix ns17: <http://dbpedia.org/ontology/Galaxy/> .
+@prefix ns18: <http://dbpedia.org/ontology/GeopoliticalOrganisation/> .
+@prefix ns19: <http://purl.org/linguistics/gold/> .
+@prefix ns20: <http://dbpedia.org/ontology/LunarCrater/> .
+@prefix ns21: <http://dbpedia.org/ontology/MovingWalkway/> .
+@prefix ns22: <http://dbpedia.org/ontology/On-SiteTransportation/> .
+@prefix ns23: <http://dbpedia.org/ontology/Planet/> .
+@prefix ns24: <http://dbpedia.org/ontology/Rocket/> .
+@prefix ns25: <http://dbpedia.org/ontology/School/> .
+@prefix ns26: <http://dbpedia.org/ontology/Software/> .
+@prefix ns27: <http://dbpedia.org/ontology/SpaceMission/> .
+@prefix ns28: <http://dbpedia.org/ontology/SpaceShuttle/> .
+@prefix ns29: <http://dbpedia.org/ontology/SpaceStation/> .
+@prefix ns30: <http://dbpedia.org/ontology/Spacecraft/> .
+@prefix ns31: <http://dbpedia.org/ontology/Person/> .
+@prefix ns32: <http://dbpedia.org/ontology/Infrastructure/> .
+@prefix ns33: <http://dbpedia.org/ontology/Building/> .
+@prefix ns34: <http://dbpedia.org/ontology/Astronaut/> .
+@prefix ns35: <http://dbpedia.org/ontology/Work/> .
+@prefix ns37: <http://purl.org/vocommons/voaf#> .
+@prefix ns40: <http://wiki.dbpedia.org/> .
+@prefix ns42: <http://creativecommons.org/ns#> .
+@prefix ns43: <http://purl.org/vocab/vann/> .
+@prefix ns44: <http://open.vocab.org/terms/> .
+@prefix obda: <https://w3id.org/obda/vocabulary#> .
+@prefix obo1: <http://purl.obolibrary.org/obo/> .
+@prefix obo2: <http://purl.obolibrary.org/obo#> .
+@prefix ocsw: <http://data.diekb.org/def/ocsw#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix oeev: <http://www.opensilex.org/vocabulary/oeev#> .
+@prefix ogit: <http://www.purl.org/ogit/> .
+@prefix olia: <http://purl.org/olia/olia.owl#> .
+@prefix om-2: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix onto: <http://fakesite.org/system.owl#> .
+@prefix opla: <http://ontologydesignpatterns.org/opla#> .
+@prefix owl2: <http://www.w3.org/2002/07/owl#> .
+@prefix owlx: <http://www.w3.org/2003/05/owl-xml> .
+@prefix page: <http://dbpedia.org/page/> .
+@prefix pato: <http://purl.obolibrary.org/obo/pato#> .
+@prefix pav1: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
+@prefix phil: <http://philosurfical.open.ac.uk/ontology/philosurfical.owl#> .
+@prefix prof: <http://www.w3.org/ns/dx/prof/> .
+@prefix prop: <http://li-st.com/tro/property/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix qudd: <http://qudt.org/schema/datastructure/> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix rdf1: <http://www.cropontology.org/rdf/> .
+@prefix rdfa: <http://www.w3.org/ns/rdfa#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rfds: <http://www.anaee-france.fr/ontology/anaee-france_ontology#rfds%3> .
+@prefix rlog: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/rlog#> .
+@prefix road: <http://hadrianswall.squirrel.link/road#> .
+@prefix role: <http://www.estrellaproject.org/lkif-core/role.owl#> .
+@prefix rstp: <http://li-st.com/tro/resulttype/> .
+@prefix saro: <http://w3id.org/saro#> .
+@prefix sctm: <http://snomed.info/sct/subset/> .
+@prefix seas: <https://w3id.org/seas/> .
+@prefix sika: <http://ontology.sika.com/> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+@prefix site: <http://hadrianswall.squirrel.link/site#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix snap: <http://www.ifomis.org/bfo/1.1/snap#> .
+@prefix sosa: <http://www.w3.org/ns/sosa#> .
+@prefix span: <http://www.ifomis.org/bfo/1.1/span#> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix spin: <http://spinrdf.org/spin#> .
+@prefix stat: <http://lubm.shacl.stat.io/> .
+@prefix sth1: <https://www.oscinema.com.sg/cinema/Week/theme1/Screen3/slot1#> .
+@prefix sth2: <https://www.oscinema.com.sg/cinema/Week/theme2/Screen3/slot2#> .
+@prefix sth3: <https://www.oscinema.com.sg/cinema/Week/theme3/Screen3/slot3#> .
+@prefix svpr: <http://www.specialprivacy.eu/vocabs/processing#> .
+@prefix svpu: <http://www.specialprivacy.eu/vocabs/purposes#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix tags: <http://www.holygoat.co.uk/owl/redwood/0.1/tags/> .
+@prefix this: <urn:IEEE-1641:2010:DigitalTSFLib> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix toco: <http://purl.org/toco/> .
+@prefix topo: <http://www.it2rail.eu/ontology/topology#> .
+@prefix tran: <http://www.opengis.net/citygml/transportation/2.0/> .
+@prefix ucum: <http://purl.oclc.org/NET/muo/ucum/> .
+@prefix umls: <http://bioportal.bioontology.org/ontologies/umls/> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
+@prefix univ: <http://www.indoversitas.id/> .
+@prefix vaem: <http://www.linkedmodel.org/schema/vaem#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vivo: <http://purl.org/roh/mirror/vivo#> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix voag: <http://voag.linkedmodel.org/schema/voag#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix wdrs: <http://www.w3.org/2007/05/powder-s#> .
+@prefix wemi: <http://example.org/openWEMI/> .
+@prefix xdtp: <http://li-st.com/tro/xsddatatype/> .
+@prefix yago: <http://dbpedia.org/class/yago/> .
+@prefix AWMAS: <http://www.semanticweb.org/AWMAS#> .
+@prefix OOSMP: <http://ontology.tib.eu/dr/-OOSMP#> .
+@prefix SHOnt: <file://SHOnt.owl#> .
+@prefix admin: <http://webns.net/mvcb/> .
+@prefix arjun: <http://lsirwww.epfl.ch/courses/dis/2005ws/exercises/rdf/www/schema.txt> .
+@prefix atold: <http://publications.europa.eu/resource/authority/> .
+@prefix bevon: <http://rdfs.co/bevon/> .
+@prefix brick: <https://brickschema.org/schema/1.1/Brick#> .
+@prefix capec: <http://purl.org/cyber/capec#> .
+@prefix carex: <http://biosemantics.arizona.edu/ontologies/carex#> .
+@prefix cesar: <http://www.cesar/> .
+@prefix chebi: <http://purl.obolibrary.org/obo/chebi/> .
+@prefix clmat: <http://www.nsmntx.org/2019/10/clothingMaterials#> .
+@prefix conll: <http://ufal.mff.cuni.cz/conll2009-st/task-description.html#> .
+@prefix conn2: <https://aastat.gov.de/connector/conn2/> .
+@prefix core1: <http://purl.obolibrary.org/obo/core#> .
+@prefix core2: <http://purl.obolibrary.org/obo/core#> .
+@prefix core3: <http://purl.obolibrary.org/obo/core#> .
+@prefix crmpc: <http://www.cidoc-crm.org/crm_property_classes/> .
+@prefix datex: <http://vocab.datex.org/terms#> .
+@prefix dawgt: <http://www.w3.org/2001/sw/DataAccess/tests/test-dawg#> .
+@prefix dtype: <http://www.srdc.com.tr/ontmalizer#> .
+@prefix esadm: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#> .
+@prefix esagm: <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#> .
+@prefix escjr: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#> .
+@prefix esdir: <http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#> .
+@prefix euvoc: <http://publications.europa.eu/ontology/euvoc#> .
+@prefix event: <https://onerecord.iata.org/Event#> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix first: <http://www.w3.org/2002/03owlt/AllDifferent/premises001#> .
+@prefix grddl: <http://www.w3.org/2003/g/data-view#> .
+@prefix gront: <http://genomic-resources.eu/ontology/> .
+@prefix irrig: <http://www.w3id.org/def/irrig#> .
+@prefix iswww: <http://sw.edu/#> .
+@prefix km4cr: <http://www.disit.org/km4city/resource#> .
+@prefix legal: <http://www.w3.org/ns/legal#> .
+@prefix lemon: <http://lemon-model.net/lemon#> .
+@prefix lvont: <http://lexvo.org/ontology#> .
+@prefix mereo: <http://www.estrellaproject.org/lkif-core/mereology.owl#> .
+@prefix meshv: <http://id.nlm.nih.gov/mesh/vocab#> .
+@prefix mondo: <http://purl.obolibrary.org/obo/mondo#> .
+@prefix offer: <https://onerecord.iata.org/Offer#> .
+@prefix ogcgs: <http://www.opengis.net/ont/geosparql#> .
+@prefix ogcsf: <http://www.opengis.net/ont/sf#> .
+@prefix omgeo: <http://www.ontotext.com/owlim/geo#> .
+@prefix orges: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#> .
+@prefix other: <https://onerecord.iata.org/Other#> .
+@prefix owl11: <http://www.w3.org/2006/12/owl11#> .
+@prefix part1: <https://im.internationaldataspaces.org/participant/part1> .
+@prefix picca: <http://www.piza.com/ontologies/picca.owl#> .
+@prefix piece: <https://onerecord.iata.org/Piece#> .
+@prefix pizza: <http://www.co-ode.org/ontologies/pizza/pizza.owl#> .
+@prefix place: <http://www.estrellaproject.org/lkif-core/relative-places.owl#> .
+@prefix power: <http://purl.oclc.org/NET/muo/ucum/unit/power/> .
+@prefix powla: <http://purl.org/powla/powla.owl#> .
+@prefix price: <https://onerecord.iata.org/Price#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.1/> .
+@prefix queso: <http://www.owl-ontologies.com/OntologiaQueso.owl> .
+@prefix quest: <http://obda.org/quest#> .
+@prefix rdfdf: <http://www.openlinksw.com/virtrdf-data-formats#> .
+@prefix saplo: <http://developer.saplo.com/method/text-tags#> .
+@prefix saref: <https://w3id.org/saref#> .
+@prefix schor: <https://w3id.org/scholarlydata/role/> .
+@prefix scovo: <http://purl.org/NET/scovo#> .
+@prefix shape: <http://lubm.shacl.io/> .
+@prefix skos1: <http://purl.org/roh/mirror/skos#> .
+@prefix story: <http://www.example.org/story.owl#> .
+@prefix swrla: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix swrlx: <http://www.w3.org/2003/11/swrlx#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix time2: <http://purl.oclc.org/NET/muo/ucum/unit/time/> .
+@prefix types: <http://psi.egovpt.org/types/> .
+@prefix tzont: <http://www.w3.org/2006/timezone#> .
+@prefix units: <https://sweet.jpl.nasa.gov/> .
+@prefix vCard: <http://www.w3.org/2001/vcard-rdf/3.0#> .
+@prefix value: <https://onerecord.iata.org/Value#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix vitro: <http://vitro.mannlib.cornell.edu/ns/vitro/0.7#> .
+@prefix vocab: <http://localhost:2020/vocab/> .
+@prefix world: <http://world.squirrel.link/ontology#> .
+@prefix xhtml: <http://www.w3.org/1999/xhtml/> .
+@prefix xlink: <http://www.w3.org/1999/xlink> .
+@prefix xsl10: <http://www.w3.org/XSL/Transform/1.0> .
+@prefix xslwd: <http://www.w3.org/TR/WD-xsl> .
+@prefix yahoo: <http://developer.yahoo.com/search/content/V2/contentAnalysis.html#> .
+@prefix NDF-RT: <http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#> .
+@prefix RAMI40: <http://ontology.tib.eu/dr/-RAMI40#> .
+@prefix action: <http://www.estrellaproject.org/lkif-core/action.owl#> .
+@prefix arrest: <http://osw2019.com/brichevg/arrest/> .
+@prefix bqbiol: <http://biomodels.net/biology-qualifiers/> .
+@prefix branch: <https://onerecord.iata.org/Branch#> .
+@prefix camera: <http://www.xfront.com/owl/ontologies/camera/#> .
+@prefix chebi1: <http://purl.obolibrary.org/obo/chebi#> .
+@prefix chebi2: <http://purl.obolibrary.org/obo/chebi#> .
+@prefix chebi3: <http://purl.obolibrary.org/obo/chebi#> .
+@prefix chebi4: <http://purl.obolibrary.org/obo/chebi#2> .
+@prefix chebi5: <http://purl.obolibrary.org/obo/chebi#3> .
+@prefix chebi6: <http://purl.obolibrary.org/obo/chebi#1> .
+@prefix cocoon: <http://w3id.org/cocoon/v1.0.1#> .
+@prefix common: <http://www.it2rail.eu/ontology/common#> .
+@prefix dcatap: <http://data.europa.eu/r5r/> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix demand: <https://cntic10.hit.bme.hu/do/network_model/raw/master/ontology/demand.owl#> .
+@prefix dwciri: <http://rs.tdwg.org/dwc/iri/> .
+@prefix edrive: <http://www.festo.com/edrive#> .
+@prefix entsoe: <http://entsoe.eu/CIM/SchemaExtension/3/1#> .
+@prefix family: <http://www.semanticweb.org/mohammad/ontologies/2019/12/family#> .
+@prefix fhircs: <http://hl7.org/fhir/cs/> .
+@prefix fhirvs: <http://hl7.org/fhir/ValueSet/> .
+@prefix flight: <http://www.project-best.eu/owl/airm-mod/flight.owl#> .
+@prefix geowgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix hsapdv: <http://purl.obolibrary.org/obo/hsapdv#> .
+@prefix landrs: <https://w3id.org/landrs/def/ontologies/> .
+@prefix lcc-cr: <https://www.omg.org/spec/LCC/Countries/CountryRepresentation/> .
+@prefix lcc-lr: <https://www.omg.org/spec/LCC/Languages/LanguageRepresentation/> .
+@prefix length: <http://purl.oclc.org/NET/muo/ucum/unit/length/> .
+@prefix locore: <https://w3id.org/landrs/def/ontologies/core/> .
+@prefix mathml: <http://www.w3.org/1998/Math/MathML> .
+@prefix neoind: <neo4j://individuals#> .
+@prefix neovoc: <neo4j://vocabulary#> .
+@prefix ns_1_6: <http://xmlns.com/wordnet/1.6/> .
+@prefix object: <http://www.mistea.supagro.inra.fr/object#> .
+@prefix ogcgml: <http://www.opengis.net/ont/gml#> .
+@prefix ogcgsf: <http://www.opengis.net/def/function/geosparql/> .
+@prefix ogcgsr: <http://www.opengis.net/def/rule/geosparql/> .
+@prefix oldssn: <http://purl.oclc.org/NET/ssnx/ssn#> .
+@prefix ombibo: <http://www.wurvoc.org/bibliography/om-2/> .
+@prefix patent: <http://data.epo.org/linked-data/def/patent/> .
+@prefix people: <http://www.outreach.io/people#> .
+@prefix person: <https://onerecord.iata.org/Person#> .
+@prefix pizza1: <http://www.co-ode.org/ontologies/pizza#> .
+@prefix plants: <http://www.linkeddatatools.com/plants#> .
+@prefix prefix: <http://purl.oclc.org/NET/muo/ucum/prefix/> .
+@prefix qudtqk: <http://qudt.org/vocab/quantitykind/> .
+@prefix ranges: <https://onerecord.iata.org/Ranges#> .
+@prefix rating: <https://onerecord.iata.org/Rating#> .
+@prefix recipe: <https://schema.org/Recipe/> .
+@prefix ruleml: <http://www.w3.org/2003/11/ruleml#> .
+@prefix schema: <http://schema.org/> .
+@prefix semgis: <http://semgis.de/geodata#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix status: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix terms1: <http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/> .
+@prefix terms2: <http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/terms/> .
+@prefix travel: <http://www.it2rail.eu/ontology/travel#> .
+@prefix uberon: <http://purl.obolibrary.org/obo/uberon#> .
+@prefix ubprop: <http://purl.obolibrary.org/obo/ubprop#> .
+@prefix upwork: <http://upwork.com/upwork#> .
+@prefix victim: <http://osw2019.com/brichevg/victim/> .
+@prefix vienna: <http://semtech.eliasladenburger.com/vienna#> .
+@prefix w3cgeo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix OntoUML: <http://nemo.inf.ufes.br/OntoUML.owl#> .
+@prefix TestTDO: <http://www.semanticweb.org/ontologies/2020/TestTDO.owl#> .
+@prefix address: <https://onerecord.iata.org/Address#> .
+@prefix arvalis: <http://www.ontology.irstea.fr/arvalis/> .
+@prefix booking: <https://onerecord.iata.org/Booking#> .
+@prefix bqmodel: <http://biomodels.net/model-qualifiers/> .
+@prefix collect: <https://onerecord.iata.org/Collect#> .
+@prefix company: <https://onerecord.iata.org/Company#> .
+@prefix concept: <http://sw.opencyc.org/concept/> .
+@prefix contact: <http://www.w3.org/2000/10/swap/pim/contact#> .
+@prefix cooking: <http://www.semanticweb.org/learningcooking/ontologies/2019/1/Cooking#> .
+@prefix country: <https://onerecord.iata.org/Country#> .
+@prefix customs: <https://onerecord.iata.org/Customs#> .
+@prefix cv_base: <http://rdfs.org/resume-rdf/base.rdfs#> .
+@prefix cv_rdfs: <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+@prefix dcterms: <http://purl.org/dc/terms#> .
+@prefix demands: <https://cntic10.hit.bme.hu/do/network_model/raw/master/examples/example2/demands.rdf#> .
+@prefix devices: <https://cntic10.hit.bme.hu/do/network_model/raw/master/examples/example2/5g_devices.rdf#> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix esequip: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#> .
+@prefix example: <http://www.example.com/> .
+@prefix icom_ac: <http://docs.oasis-open.org/ns/icom/accesscontrol/201008#> .
+@prefix interop: <http://www.it2rail.eu/ontology/InteroperabilityFramework#> .
+@prefix iso3166: <http://downlode.org/rdf/iso-3166/countries#> .
+@prefix isoform: <http://purl.uniprot.org/isoforms/> .
+@prefix isothes: <http://purl.org/iso25964/skos-thes#> .
+@prefix journal: <http://www.journals.elsevier.com/> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#> .
+@prefix license: <http://www.ebi.ac.uk/swo/license/> .
+@prefix old-ssn: <http://purl.oclc.org/NET/ssnx/ssn#> .
+@prefix onemtom: <http://www.onem2m.org/ontology/Base_Ontology/base_ontology#> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix ontoneo: <http://purl.obolibrary.org/obo/ontoneo/> .
+@prefix open311: <http://ontology.eil.utoronto.ca/open311#> .
+@prefix openEHR: <https://specifications.openehr.org/releases/RM/latest/ehr.html#_> .
+@prefix opencyc: <http://sw.opencyc.org/concept/> .
+@prefix owl2xml: <http://www.w3.org/2006/12/owl2-xml#> .
+@prefix prepaid: <https://onerecord.iata.org/Prepaid#> .
+@prefix process: <http://www.estrellaproject.org/lkif-core/process.owl#> .
+@prefix product: <https://onerecord.iata.org/Product#> .
+@prefix protege: <http://protege.stanford.edu/plugins/owl/protege#> .
+@prefix protseq: <http://purl.org/science/protein/bysequence/> .
+@prefix ratings: <https://onerecord.iata.org/Ratings#> .
+@prefix routing: <https://onerecord.iata.org/Routing#> .
+@prefix semtech: <http://semtech.eliasladenburger.com/#> .
+@prefix skos-xl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix spatial: <http://geovocab.org/spatial#> .
+@prefix stardog: <tag:stardog:api:> .
+@prefix subsets: <http://purl.obolibrary.org/obo/ro/subsets#> .
+@prefix transit: <http://vocab.org/transit/terms/> .
+@prefix uneskos: <http://purl.org/umu/uneskos#> .
+@prefix uniprot: <http://purl.uniprot.org/core/> .
+@prefix unknown: <http://www.it2rail.eu/ontology/unknown#> .
+@prefix usdl-br: <http://www.linked-usdl.org/ns/usdl-business-roles#> .
+@prefix usdl-ir: <http://www.linked-usdl.org/ns/usdl-interaction-roles#> .
+@prefix usdl-it: <http://www.linked-usdl.org/ns/usdl-interaction-types#> .
+@prefix usdl-lr: <http://www.linked-usdl.org/ns/usdl-liability-roles#> .
+@prefix virtrdf: <http://www.openlinksw.com/schemas/virtrdf#> .
+@prefix waybill: <https://onerecord.iata.org/Waybill#> .
+@prefix xsl1999: <http://www.w3.org/1999/XSL/Transform> .
+@prefix zemanta: <http://developer.zemanta.com/docs/entity_type/> .
+@prefix GConsent: <https://w3id.org/GConsent#> .
+@prefix LConsent: <https://www.datavillage.me/ontologies/LConsent#> .
+@prefix SNOMEDCT: <http://purl.bioontology.org/ontology/SNOMEDCT/> .
+@prefix admsapit: <https://w3id.org/italia/onto/ADMS/> .
+@prefix bkuoneri: <http://www.semanticweb.org/bkuoneri#> .
+@prefix carriage: <https://onerecord.iata.org/Carriage#> .
+@prefix cellline: <http://www.ebi.ac.uk/cellline/> .
+@prefix cidoccrm: <http://purl.org/NET/cidoc-crm/core#> .
+@prefix covid-19: <http://www.semanticweb.org/kasun/ontologies/2020/3/covid-19#> .
+@prefix customer: <http://www.it2rail.eu/ontology/customer#> .
+@prefix cycAnnot: <http://sw.cyc.com/CycAnnotations_v1#> .
+@prefix dcmitype: <http://purl.org/dc/dcmitype/> .
+@prefix elements: <http://www.geneontology.org/formats/oboInOwl#http://purl.org/dc/elements/1.1/> .
+@prefix focudata: <http://focu.io/data#> .
+@prefix fraction: <http://purl.oclc.org/NET/muo/ucum/unit/fraction/> .
+@prefix freebase: <http://rdf.freebase.com/ns/> .
+@prefix geonames: <http://www.geonames.org/ontology/ontology_v3.1.rdf#> .
+@prefix gleif-ra: <https://www.gleif.org/ontology/RegistrationAuthority/> .
+@prefix handling: <https://onerecord.iata.org/Handling#> .
+@prefix icom_cal: <http://docs.oasis-open.org/ns/icom/calendar/201008#> .
+@prefix icom_doc: <http://docs.oasis-open.org/ns/icom/document/201008#> .
+@prefix icom_msg: <http://docs.oasis-open.org/ns/icom/message/201008#> .
+@prefix icontact: <http://ontology.eil.utoronto.ca/icontact.owl#> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
+@prefix iot-lite: <http://purl.oclc.org/NET/UNIS/fiware/iot-lite#> .
+@prefix iso-4217: <https://www.omg.org/spec/EDMC-FIBO/FND/Accounting/ISO4217-CurrencyCodes/> .
+@prefix iso-thes: <http://purl.org/iso25964/skos-thes#> .
+@prefix iso19115: <http://www.isotc211.org/2005/gmd> .
+@prefix itvoprof: <https://ont.itv.com/odrl/profile/> .
+@prefix lci_ingr: <http//www.lacucinaitaliana.com/ingredients/> .
+@prefix location: <https://onerecord.iata.org/Location#> .
+@prefix locowlrl: <https://w3id.org/landrs/def/ontologies/core/owlrl/> .
+@prefix mco-core: <urn:mpeg:mpeg21:mco:core:2015#> .
+@prefix mesh2020: <http://id.nlm.nih.gov/mesh/2020/> .
+@prefix metadata: <http://data.bioontology.org/metadata/> .
+@prefix mydomain: <http://www.mydomain.org/my-rdf-ns> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix olia_top: <http://purl.org/olia/olia-top.owl#> .
+@prefix ontologi: <http://ipb/ontologi#> .
+@prefix ontology: <http://covid19.squirrel.link/ontology#> .
+@prefix otherOnt: <http://example.org/otherOntologies/families/> .
+@prefix owl11xml: <http://www.w3.org/2006/12/owl11-xml#> .
+@prefix patterns: <http://www.co-ode.org/patterns#> .
+@prefix pressure: <http://purl.oclc.org/NET/muo/ucum/unit/pressure/> .
+@prefix research: <http://xmlns.com/foaf/0.1/> .
+@prefix resource: <http://semanticscience.org/resource/> .
+@prefix semitags: <http://ner2.lmcloud.vse.cz/SemiTags/app/static/types#> .
+@prefix semspect: <http://derivo.de/semspect#> .
+@prefix shipment: <https://onerecord.iata.org/Shipment#> .
+@prefix shopping: <http://www.it2rail.eu/ontology/shopping#> .
+@prefix temporal: <http://swrl.stanford.edu/ontologies/built-ins/3.3/temporal.owl#> .
+@prefix timezone: <http://www.w3.org/2006/timezone#> .
+@prefix virtcxml: <http://www.openlinksw.com/schemas/virtcxml#> .
+@prefix wgs84pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix wikidata: <http://www.wikidata.org/entity/> .
+@prefix wikimeta: <http://www.wikimeta.com#> .
+@prefix yago-res: <http://yago-knowledge.org/resource/> .
+@prefix BADataPKG: <http://www.it2rail.eu/ontology/BADataPKG#> .
+@prefix F21BD-CW2: <http://www.semanticweb.org/katja/F21BD-CW2#> .
+@prefix NCBITaxon: <http://purl.obolibrary.org/obo/NCBITaxon#> .
+@prefix TCDataPKG: <http://www.it2rail.eu/ontology/TCDataPKG#> .
+@prefix apollo_sv: <http://purl.obolibrary.org/obo/apollo_sv.owl/> .
+@prefix archimate: <http://bp4mc2.org/def/archimate#> .
+@prefix beautiful: <beautiful#> .
+@prefix bkuoneri1: <http://www.ilknurteke.com/6017/bkuoneri.owl#> .
+@prefix bsbm-inst: <http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/instances/> .
+@prefix commodity: <https://onerecord.iata.org/Commodity#> .
+@prefix dmsgmeter: <http://www.ontodata.xyz/ontologies/dmsgmeter#> .
+@prefix extractiv: <http://wiki.extractiv.com/w/page/29179775/Entity-Extraction#> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+@prefix icom_card: <http://docs.oasis-open.org/ns/icom/contact/201008#> .
+@prefix icom_conf: <http://docs.oasis-open.org/ns/icom/conference/201008#> .
+@prefix icom_core: <http://docs.oasis-open.org/ns/icom/core/201008#> .
+@prefix icom_meta: <http://docs.oasis-open.org/ns/icom/metadata/201008#> .
+@prefix icom_task: <http://docs.oasis-open.org/ns/icom/task/201008#> .
+@prefix idsc_auth: <https://w3id.org/idsa/code/auth/> .
+@prefix idsc_cert: <https://w3id.org/idsa/code/certification/> .
+@prefix idsc_prot: <https://w3id.org/idsa/protocol/> .
+@prefix insurance: <https://onerecord.iata.org/Insurance#> .
+@prefix interface: <http://www.ebi.ac.uk/swo/interface/> .
+@prefix lcc-639-1: <https://www.omg.org/spec/LCC/Languages/ISO639-1-LanguageCodes/> .
+@prefix lcc-639-2: <https://www.omg.org/spec/LCC/Languages/ISO639-2-LanguageCodes/> .
+@prefix naics2007: <http://linkedmodel.org/vocab/industry-codes/naics-2007#> .
+@prefix ncbitaxon: <http://purl.obolibrary.org/obo/ncbitaxon#> .
+@prefix oboInOwl1: <www.geneontology.org/formats/oboInOwl#> .
+@prefix ontodebug: <http://ainf.aau.at/ontodebug#> .
+@prefix paradicms: <http://www.paradicms.org/ns#> .
+@prefix qudt-unit: <http://qudt.org/1.1/vocab/unit#> .
+@prefix sctbridge: <http://hl7.org/fhir_SCTBridge/> .
+@prefix skos-thes: <http://purl.org/iso25964/skos-thes#> .
+@prefix ticketing: <http://www.it2rail.eu/ontology/ticketing#> .
+@prefix transport: <http://www.it2rail.eu/ontology/transport#> .
+@prefix uniprotkb: <https://www.uniprot.org/uniprot/> .
+@prefix usdl-core: <http://www.linked-usdl.org/ns/usdl-core#> .
+@prefix vcard2006: <http://www.w3.org/2006/vcard/ns#> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix 5g_devices: <https://cntic10.hit.bme.hu/do/network_model/raw/master/examples/example2/compact/5g_devices.rdf#> .
+@prefix Vocabulary: <https://standards.oftrust.net/v2/Vocabulary/> .
+@prefix airWaybill: <https://onerecord.iata.org/AirWaybill#> .
+@prefix alchemyapi: <http://www.alchemyapi.com/api/entity/types.html#> .
+@prefix aliexpress: <aliexpress.com:> .
+@prefix dbpedia-fr: <http://fr.dbpedia.org/resource/> .
+@prefix dbpedia-it: <http://it.dbpedia.org/resource/> .
+@prefix dbpedia-pl: <http://pl.dbpedia.org/resource/> .
+@prefix dbpedia-pt: <http://pt.dbpedia.org/resource/> .
+@prefix dimensions: <https://onerecord.iata.org/Dimension#> .
+@prefix fiesta-iot: <http://purl.org/iot/ontology/fiesta-iot#> .
+@prefix gleif-base: <https://www.gleif.org/ontology/Base/> .
+@prefix icom_forum: <http://docs.oasis-open.org/ns/icom/forum/201008#> .
+@prefix inventions: <http://www.onto.org/inventions#> .
+@prefix keldspizza: <http://www.keld.com/keldspizza#> .
+@prefix lcc-3166-1: <https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/> .
+@prefix locontexts: <https://w3id.org/landrs/def/ontologies/shapes/> .
+@prefix lopatterns: <https://w3id.org/landrs/def/ontologies/patterns/> .
+@prefix mohamedbah: <http://www.semanticweb.org/mohamedbah#> .
+@prefix mthreelite: <http://purl.org/iot/vocab/m3-lite#> .
+@prefix ontologies: <http://www.bb.com.br/semanticbb/ontologies/> .
+@prefix opencalais: <http://www.opencalais.com/documentation/calais-web-service-api/api-metadata/entity-index-and-definitions#> .
+@prefix otherParty: <https://onerecord.iata.org/OtherParty#> .
+@prefix parameters: <https://cntic10.hit.bme.hu/do/network_model/raw/master/ontology/parameters.owl#> .
+@prefix production: <https://onerecord.iata.org/Production#> .
+@prefix rdf-schema: <http://www.w3.org/2000/01/rdf-schema/> .
+@prefix recipesrdf: <http://www.semanticweb.org/chris/ontologies/2019/1/Recipe#> .
+@prefix saref4agri: <https://w3id.org/def/saref4agri#> .
+@prefix ssn-system: <http://www.w3.org/ns/ssn/systems/> .
+@prefix usdl-price: <http://www.linked-usdl.org/ns/usdl-price#> .
+@prefix vocabulary: <http://www.opensilex.org/vocabulary/oeso#> .
+@prefix webprotege: <http://webprotege.stanford.edu/> .
+@prefix FriOntology: <urn:absolute:FriOntology#> .
+@prefix ace_lexicon: <http://attempto.ifi.uzh.ch/ace_lexicon#> .
+@prefix aliexpress2: <aliexpress.com:2> .
+@prefix aliexpress3: <aliexpress.com:3> .
+@prefix aliexpress4: <aliexpress.com:3.5> .
+@prefix aliexpress5: <aliexpress.com:4> .
+@prefix annotations: <http://emmo.info/emmo/top/annotations#> .
+@prefix criticality: <http://hl7.org/fhir/criticality#> .
+@prefix customsInfo: <https://onerecord.iata.org/CustomsInfo#> .
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
+@prefix ecsel-dr-AH: <http://www.w3id.org/ecsel-dr-AH#> .
+@prefix ecsel-dr-AT: <http://www.w3id.org/ecsel-dr-AT#> .
+@prefix geolocation: <https://onerecord.iata.org/Geolocation#> .
+@prefix mydocuments: <http://example.org/mydocuments/> .
+@prefix olia_system: <http://purl.org/olia/system.owl#> .
+@prefix otherCharge: <https://onerecord.iata.org/OtherCharge#> .
+@prefix plane-angle: <http://purl.oclc.org/NET/muo/ucum/unit/plane-angle/> .
+@prefix politicians: <http://www.semanticweb.org/viva/ontologies/2019/6/politicians#> .
+@prefix stakeholder: <http://manusquare.project.eu/stakeholders/> .
+@prefix tdwgutility: <http://rs.tdwg.org/dwc/terms/attributes/> .
+@prefix temperature: <http://purl.oclc.org/NET/muo/ucum/unit/temperature/> .
+@prefix upworkModel: <http://upwork.com/upworkModel#> .
+@prefix Pharmacology: <http://localhost:8080/Pharmacology#> .
+@prefix contactOther: <https://onerecord.iata.org/ContactOther#> .
+@prefix cpu-unit-ext: <https://cntic10.hit.bme.hu/do/network_model/raw/master/ontology/cpu-unit-ext.owl#> .
+@prefix dublincorens: <http://purl.org/dc/elements/1.1/> .
+@prefix geopolitical: <http://aims.fao.org/aos/geopolitical.owl#> .
+@prefix houseWaybill: <https://onerecord.iata.org/HouseWaybill#> .
+@prefix icom_content: <http://docs.oasis-open.org/ns/icom/content/201008#> .
+@prefix magnetomodel: <http://www.magneto-h2020.eu#> .
+@prefix organization: <http://www.ebi.ac.uk/swo/organization/> .
+@prefix owl-modeling: <http://www.semanticweb.org/bernhard/ontologies/2019/10/owl-modeling#> .
+@prefix quantitykind: <http://qudt.org/vocab/quantitykind/> .
+@prefix quoteRequest: <https://onerecord.iata.org/QuoteRequest#> .
+@prefix receivedFrom: <https://onerecord.iata.org/ReceivedFrom#> .
+@prefix routed_paths: <https://cntic10.hit.bme.hu/do/network_model/raw/master/examples/example2/routed_paths.rdf#> .
+@prefix securityInfo: <https://onerecord.iata.org/SecurityInfo#> .
+@prefix test-rigDemo: <http://www.semanticweb.org/kuegler/ontologies/2017/9/test-rigDemo#> .
+@prefix wikipedia-en: <http://en.wikipedia.org/wiki/> .
+@prefix PKCR_Aircraft: <http://www.airbus.com/PKCR/Ontology_Aircraft/> .
+@prefix WebSemProject: <http://www.semanticweb.org/ontologies/WebSemProject#> .
+@prefix base_ontology: <http://www.onem2m.org/ontology/Base_Ontology/base_ontology#> .
+@prefix bookingStatus: <https://onerecord.iata.org/BookingStatus#> .
+@prefix chargePayment: <https://onerecord.iata.org/ChargePayment#> .
+@prefix chargeSummary: <https://onerecord.iata.org/ChargeSummary#> .
+@prefix co2CalcMethod: <https://onerecord.iata.org/CO2CalcMethod#> .
+@prefix coronaviruses: <http://coronaviruses.rdf#> .
+@prefix ecsel-dr-PROD: <http://www.w3id.org/ecsel-dr-PROD#> .
+@prefix icom_presence: <http://docs.oasis-open.org/ns/icom/presence/201008#> .
+@prefix identifierUse: <http://hl7.org/fhir/identifierUse#> .
+@prefix movieontology: <http://www.movieontology.org/2009/10/01/movieontology.owl#> .
+@prefix packagingType: <https://onerecord.iata.org/PackagingType#> .
+@prefix pieceGrouping: <https://onerecord.iata.org/PieceGrouping#> .
+@prefix qudt-unit-1-1: <http://qudt.org/vocab/unit#> .
+@prefix quoteResponse: <https://onerecord.iata.org/QuoteResponse#> .
+@prefix bookingRequest: <https://onerecord.iata.org/BookingRequest#> .
+@prefix carcinogenesis: <http://dl-learner.org/carcinogenesis#> .
+@prefix carrierProduct: <https://onerecord.iata.org/CarrierProduct#> .
+@prefix categorization: <https://standards.oftrust.net/v2/Vocabulary/categorization/> .
+@prefix characteristic: <https://onerecord.iata.org/Characteristic#> .
+@prefix dangerousGoods: <https://onerecord.iata.org/DangerousGoods#> .
+@prefix ecsel-dr-OOSMP: <http://www.w3id.org/ecsel-dr-OOSMP#> .
+@prefix family_example: <https://wiki.csc.calpoly.edu/OntologyTutorial/family_example.owl#> .
+@prefix fhir-metamodel: <http://hl7.org/fhir-metamodel/> .
+@prefix fhkb_chapter_2: <http://mowl-power.cs.man.ac.uk/fhkbtutorial/ontology/fhkb_chapter_2.owl#> .
+@prefix fhkb_chapter_4: <http://mowl-power.cs.man.ac.uk/fhkbtutorial/ontology/fhkb_chapter_4.owl#> .
+@prefix fhkb_chapter_5: <http://mowl-power.cs.man.ac.uk/fhkbtutorial/ontology/fhkb_chapter_5.owl#> .
+@prefix fhkb_chapter_7: <http://mowl-power.cs.man.ac.uk/fhkbtutorial/ontology/fhkb_chapter_7.owl#> .
+@prefix fhkb_chapter_9: <http://mowl-power.cs.man.ac.uk/fhkbtutorial/ontology/fhkb_chapter_9.owl#> .
+@prefix insect-anatomy: <http://purl.obolibrary.org/obo/uberon/insect-anatomy#> .
+@prefix movieontology2: <http://www.movieontology.org/2009/11/09/movieontology.owl#> .
+@prefix ontologi_obatt: <http://ipb/ontologi_obatt#> .
+@prefix routing-domain: <https://cntic10.hit.bme.hu/do/network_model/raw/master/ontology/routing-domain.owl#> .
+@prefix securityStatus: <https://onerecord.iata.org/SecurityStatus#> .
+@prefix serviceRequest: <https://onerecord.iata.org/ServiceRequest#> .
+@prefix specialService: <https://onerecord.iata.org/SpecialService#> .
+@prefix transportMeans: <https://onerecord.iata.org/TransportMeans#> .
+@prefix usdl-agreement: <http://www.linked-usdl.org/ns/usdl-agreement#> .
+@prefix characteristics: <https://onerecord.iata.org/Characteristics#> .
+@prefix dbpediaontology: <http://dbpedia.org/ontology/> .
+@prefix ecsel-dr-RAMI40: <http://www.w3id.org/ecsel-dr-RAMI40#> .
+@prefix nlp-hw-security: <http://www.semanticweb.org/bandi/ontologies/2020/7/nlp-hw-security#> .
+@prefix otherIdentifier: <https://onerecord.iata.org/OtherIdentifier#> .
+@prefix specialHandling: <https://onerecord.iata.org/SpecialHandling#> .
+@prefix Alternative_Term: <http://www.semanticweb.org/hamide/ontologies/2019/3/untitled-ontology-14#Alternative_Term,> .
+@prefix OntologyForEshop: <http://www.semanticweb.org/new/ontologies/2020/10/OntologyForEshop#> .
+@prefix capacity_example: <https://cntic10.hit.bme.hu/do/network_model/raw/master/examples/example2/capacity_example.rdf#> .
+@prefix carrierSignature: <https://onerecord.iata.org/CarrierSignature#> .
+@prefix chromosome-parts: <http://purl.obolibrary.org/obo/test/chromosome-parts#> .
+@prefix collectionentity: <http://www.ontologydesignpatterns.org/cp/owl/collectionentity.owl#> .
+@prefix dbpedia-wikidata: <http://wikidata.dbpedia.org/resource/> .
+@prefix einsteins_riddle: <http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#> .
+@prefix narrative-status: <http://hl7.org/fhir/narrative-status#> .
+@prefix physical-quality: <http://purl.oclc.org/NET/muo/ucum/physical-quality/> .
+@prefix shipperSignature: <https://onerecord.iata.org/ShipperSignature#> .
+@prefix traffic-topology: <https://cntic10.hit.bme.hu/do/network_model/raw/master/examples/example3/ethernet-top/traffic-topology.rdf#> .
+@prefix transportSegment: <https://onerecord.iata.org/TransportSegment#> .
+@prefix upworkOccupation: <http://upwork.com/upworkOccupation#> .
+@prefix volumetricWeight: <https://onerecord.iata.org/VolumetricWeight#> .
+@prefix chargeDeclaration: <https://onerecord.iata.org/ChargeDeclaration#> .
+@prefix chargeDescription: <https://onerecord.iata.org/ChargeDescription#> .
+@prefix ebsi-notarisation: <http://www.semanticweb.org/ontologies/2020/2/ebsi-notarisation/1.0.0#> .
+@prefix externalReference: <https://onerecord.iata.org/ExternalReference#> .
+@prefix process_attribute: <http://purl.obolibrary.org/obo/envo-p/patterns/process_attribute/> .
+@prefix sealing_device_v0: <htpps://www.dropbox.com/home/Protege/sealing_device_v0##> .
+@prefix transport_network: <https://cntic10.hit.bme.hu/do/network_model/raw/master/examples/example2/transport_network.rdf#> .
+@prefix central-government: <http://reference.data.gov.uk/def/central-government#> .
+@prefix cpannotationschema: <https://lp.sekai.dev/schemas/cpannotationschema.owl#> .
+@prefix restaurantontology: <http://example.org/RestaurantOntology.owl#> .
+@prefix transport-topology: <https://cntic10.hit.bme.hu/do/network_model/raw/master/examples/example3/ethernet-top/transport-topology.rdf#> .
+@prefix AditiMoviesOntology: <http://www.semanticweb.org/mayan/ontologies/2020/3/AditiMoviesOntology#> .
+@prefix cpannotationschema1: <http://sekai.dev/ontologies/schemas/cpannotationschema.owl#> .
+@prefix quantity-comparator: <http://hl7.org/fhir/quantity-comparator#> .
+@prefix spatialDescriptions: <http://publications.europa.eu/ontology/euvoc/spatialDescriptions#> .
+@prefix untitled-ontology-2: <http://www.semanticweb.org/x473936/ontologies/2020/0/untitled-ontology-2#> .
+@prefix untitled-ontology-3: <http://www.semanticweb.org/acer/ontologies/2020/3/untitled-ontology-3#> .
+@prefix untitled-ontology-4: <http://www.semanticweb.org/sarthak/ontologies/2020/9/untitled-ontology-4#> .
+@prefix base_ontology-v0_9_0: <http://www.onem2m.org/ontology/Base_Ontology/base_ontology-v0_9_0#> .
+@prefix temporalDescriptions: <http://publications.europa.eu/ontology/euvoc/temporalDescriptions#> .
+@prefix untitled-ontology-11: <http://www.semanticweb.org/erickantonio/ontologies/2020/0/untitled-ontology-11#> .
+@prefix untitled-ontology-16: <http://www.semanticweb.org/user/ontologies/2020/2/untitled-ontology-16#> .
+@prefix untitled-ontology-17: <http://www.semanticweb.org/debanjalibain/ontologies/2020/3/untitled-ontology-17#> .
+@prefix untitled-ontology-75: <http://www.semanticweb.org/kuegler/ontologies/2017/9/untitled-ontology-75#> .
+@prefix untitled-ontology-83: <http://www.semanticweb.org/dr.soniamehla/ontologies/2016/7/untitled-ontology-83#> .
+@prefix ReferenceInstantValue: <https://lp.sekai.dev/sekai-platform-config/reference-instant-value#> .
+@prefix anaee-france_ontology: <http://www.anaee-france.fr/ontology/anaee-france_ontology#> .
+@prefix inDestinationCurrency: <https://onerecord.iata.org/InDestinationCurrency#> .
+@prefix oKIG019UCNY0YUCMakmuV: <http://webprotege.stanford.edu/project/7oKIG019UCNY0YUCMakmuV#> .
+@prefix untitled-ontology-186: <http://www.semanticweb.org/kainatansar/ontologies/2020/0/untitled-ontology-186#> .
+@prefix visualization4ExtruOnt: <http://bdi.si.ehu.es/bdi/ontologies/ExtruOnt/visualization4ExtruOnt#> .
+@prefix medication-order-status: <http://hl7.org/fhir/medication-order-status#> .
+@prefix otherCustomsInformation: <https://onerecord.iata.org/OtherCustomsInformation#> .
+@prefix AfricanWildlifeOntology1: <file:/Applications/Protege_4.1_beta/AfricanWildlifeOntology1.owl#> .
+@prefix allergy-intolerance-type: <http://hl7.org/fhir/allergy-intolerance-type#> .
+@prefix diagnostic-report-status: <http://hl7.org/fhir/diagnostic-report-status/> .
+@prefix home-activities-ontology: <http://www.semanticweb.org/kass/ontologies/2020/0/home-activities-ontology#> .
+@prefix learningJourney-ontology: <http://www.semanticweb.org/zz889/ontologies/2018/8/learningJourney-ontology#> .
+@prefix reasonsForSecurityStatus: <https://onerecord.iata.org/ReasonsForSecurityStatus#> .
+@prefix premises-connect-topology: <https://cntic10.hit.bme.hu/do/network_model/raw/master/examples/example3/ethernet-top/premises-connect-topology.rdf#> .
+@prefix allergy-intolerance-status: <http://hl7.org/fhir/allergy-intolerance-status#> .
+@prefix allergy-intolerance-category: <http://hl7.org/fhir/allergy-intolerance-category#> .
+@prefix dto_vocabulary_kinase_domain: <http://www.drugtargetontology.org/dto/dto_vocabulary_kinase_domain.owl#> .
+@prefix dto_vocabulary_kinase_domain1: <http://www.drugtargetontology.org/dto/dto_vocabulary_kinase_domain#> .
+@prefix referenceMonitorConfiguration: <https://lp.sekai.dev/sekai-platform-config/reference-monitor-config#> .
+@prefix allergy-intolerance-criticality: <http://hl7.org/fhir/allergy-intolerance-criticality#> .
+@prefix xml4e22437efefd433585f53052a456fc38: <http://www.w3.org/XML/1998/namespace#> .
+@base <http://www.semanticweb.org/AWP> .
+
+<http://www.semanticweb.org/AWP> rdf:type OWL:Ontology .
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/AWP#AssignedTo
+
+:AssignedTo rdf:type OWL:ObjectProperty ;
+            
+            rdfs:domain :Constraint ;
+            
+            rdfs:range :Contractor ;
+            
+            rdfs:subPropertyOf OWL:topObjectProperty .
+
+
+
+###  http://www.semanticweb.org/AWP#containsZone
+
+:containsZone rdf:type OWL:ObjectProperty ;
+              
+              rdfs:domain :Zone ;
+              
+              rdfs:range :Zone ;
+              
+              rdfs:subPropertyOf OWL:topObjectProperty .
+
+
+
+###  http://www.semanticweb.org/AWP#hasBuilding
+
+:hasBuilding rdf:type OWL:ObjectProperty ;
+             
+             rdfs:domain :Zone ;
+             
+             rdfs:subPropertyOf :containsZone ;
+             
+             rdfs:range <http://www.semanticweb.org/Farghaly/CPC0ntology#Building> .
+
+
+
+###  http://www.semanticweb.org/AWP#hasCWA
+
+:hasCWA rdf:type OWL:ObjectProperty ;
+        
+        rdfs:range :CWA ;
+        
+        rdfs:domain :CWP ;
+        
+        rdfs:subPropertyOf :hasProjectID .
+
+
+
+###  http://www.semanticweb.org/AWP#hasCWP
+
+:hasCWP rdf:type OWL:ObjectProperty ;
+        
+        rdfs:domain :Activity ;
+        
+        rdfs:range :CWP ;
+        
+        rdfs:domain :Contractor ,
+                    :ShipmentID ;
+        
+        rdfs:subPropertyOf :hasProjectID .
+
+
+
+###  http://www.semanticweb.org/AWP#hasContractor
+
+:hasContractor rdf:type OWL:ObjectProperty ;
+               
+               rdfs:domain :Activity ,
+                           :CWP ;
+               
+               rdfs:range :Contractor ;
+               
+               rdfs:domain :EWP ,
+                           :IWP ,
+                           :ShipmentID ;
+               
+               rdfs:subPropertyOf OWL:topObjectProperty .
+
+
+
+###  http://www.semanticweb.org/AWP#hasDiscpline
+
+:hasDiscpline rdf:type OWL:ObjectProperty ;
+              
+              rdfs:domain :CWP ,
+                          :Contractor ,
+                          :EWP ,
+                          :IWP ,
+                          :ShipmentID ;
+              
+              rdfs:subPropertyOf :hasProjectID ;
+              
+              rdfs:range <http://www.semanticweb.org/Farghaly/CPC0ntology#Discpline> .
+
+
+
+###  http://www.semanticweb.org/AWP#hasEWP
+
+:hasEWP rdf:type OWL:ObjectProperty ;
+        
+        rdfs:domain :Activity ;
+        
+        rdfs:range :EWP ;
+        
+        rdfs:subPropertyOf :hasProjectID .
+
+
+
+###  http://www.semanticweb.org/AWP#hasElement
+
+:hasElement rdf:type OWL:ObjectProperty ;
+            
+            rdfs:range :Element ;
+            
+            rdfs:domain :Zone ;
+            
+            rdfs:subPropertyOf OWL:topObjectProperty ;
+            
+            OWL:propertyChainAxiom ( :containsZone
+                                     :hasElement
+                                   ) .
+
+
+
+###  http://www.semanticweb.org/AWP#hasIWP
+
+:hasIWP rdf:type OWL:ObjectProperty ;
+        
+        rdfs:domain :Activity ;
+        
+        rdfs:range :IWP ;
+        
+        rdfs:subPropertyOf :hasProjectID .
+
+
+
+###  http://www.semanticweb.org/AWP#hasPackage
+
+:hasPackage rdf:type OWL:ObjectProperty ;
+            
+            rdfs:domain :Constraint ;
+            
+            rdfs:range :Package ;
+            
+            rdfs:subPropertyOf OWL:topObjectProperty .
+
+
+
+###  http://www.semanticweb.org/AWP#hasParentActivity
+
+:hasParentActivity rdf:type OWL:ObjectProperty ;
+                   
+                   rdfs:domain :Activity ;
+                   
+                   rdfs:range :Activity ;
+                   
+                   rdfs:subPropertyOf OWL:topObjectProperty .
+
+
+
+###  http://www.semanticweb.org/AWP#hasProjectID
+
+:hasProjectID rdf:type OWL:ObjectProperty ;
+              
+              rdfs:domain :Activity ,
+                          :CWA ,
+                          :CWP ,
+                          :Constraint ,
+                          :Contractor ,
+                          :Document_Number ,
+                          :EWP ,
+                          :IWP ;
+              
+              rdfs:range :Project_ID ;
+              
+              rdfs:domain :ShipmentID ,
+                          <http://www.semanticweb.org/Farghaly/CPC0ntology#Milestone> ;
+              
+              rdfs:subPropertyOf OWL:topObjectProperty .
+
+
+
+###  http://www.semanticweb.org/AWP#hasProperty
+
+:hasProperty rdf:type OWL:ObjectProperty ;
+             
+             rdfs:range :Document_File_Type ;
+             
+             rdfs:domain :Document_Number ;
+             
+             rdfs:range :Document_Status ,
+                        :Document_Type ,
+                        :Package ;
+             
+             rdfs:subPropertyOf OWL:topObjectProperty .
+
+
+
+###  http://www.semanticweb.org/AWP#hasSpace
+
+:hasSpace rdf:type OWL:ObjectProperty ;
+          
+          rdfs:domain :Zone ;
+          
+          rdfs:subPropertyOf :containsZone ;
+          
+          rdfs:range <http://www.semanticweb.org/Farghaly/CPC0ntology#Space> .
+
+
+
+###  http://www.semanticweb.org/AWP#hasStorey
+
+:hasStorey rdf:type OWL:ObjectProperty ;
+           
+           rdfs:domain :Zone ;
+           
+           rdfs:subPropertyOf :containsZone ;
+           
+           rdfs:range <http://www.semanticweb.org/Farghaly/CPC0ntology#Storey> .
+
+
+
+###  http://www.semanticweb.org/AWP#hasWBS
+
+:hasWBS rdf:type OWL:ObjectProperty ;
+        
+        rdfs:domain :Activity ;
+        
+        rdfs:range :WBS ;
+        
+        rdfs:subPropertyOf :hasParentActivity .
+
+
+
+###  http://www.semanticweb.org/AWP#hasZone
+
+:hasZone rdf:type OWL:ObjectProperty ;
+         
+         rdfs:domain :CWA ;
+         
+         rdfs:range :Zone ;
+         
+         rdfs:subPropertyOf :containsZone .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/AWP#Has_Description
+
+:Has_Description rdf:type OWL:DatatypeProperty ;
+                 
+                 rdfs:domain :Package ;
+                 
+                 rdfs:subPropertyOf OWL:topDataProperty .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/AWP#Activity
+
+:Activity rdf:type OWL:Class ;
+          
+          rdfs:subClassOf :Schedule .
+
+
+
+###  http://www.semanticweb.org/AWP#CWA
+
+:CWA rdf:type OWL:Class ;
+     
+     rdfs:subClassOf :Package .
+
+
+
+###  http://www.semanticweb.org/AWP#CWP
+
+:CWP rdf:type OWL:Class ;
+     
+     rdfs:subClassOf :Package .
+
+
+
+###  http://www.semanticweb.org/AWP#Constraint
+
+:Constraint rdf:type OWL:Class .
+
+
+
+###  http://www.semanticweb.org/AWP#Contractor
+
+:Contractor rdf:type OWL:Class ;
+            
+            rdfs:subClassOf :Procurement .
+
+
+
+###  http://www.semanticweb.org/AWP#Document
+
+:Document rdf:type OWL:Class .
+
+
+
+###  http://www.semanticweb.org/AWP#Document_File_Type
+
+:Document_File_Type rdf:type OWL:Class ;
+                    
+                    rdfs:subClassOf :Document ;
+                    
+                    OWL:disjointWith :Document_Type .
+
+
+
+###  http://www.semanticweb.org/AWP#Document_Number
+
+:Document_Number rdf:type OWL:Class ;
+                 
+                 rdfs:subClassOf :Document .
+
+
+
+###  http://www.semanticweb.org/AWP#Document_Status
+
+:Document_Status rdf:type OWL:Class ;
+                 
+                 rdfs:subClassOf :Document .
+
+
+
+###  http://www.semanticweb.org/AWP#Document_Type
+
+:Document_Type rdf:type OWL:Class ;
+               
+               rdfs:subClassOf :Document .
+
+
+
+###  http://www.semanticweb.org/AWP#EWP
+
+:EWP rdf:type OWL:Class ;
+     
+     rdfs:subClassOf :Package .
+
+
+
+###  http://www.semanticweb.org/AWP#Element
+
+:Element rdf:type OWL:Class .
+
+
+
+###  http://www.semanticweb.org/AWP#IWP
+
+:IWP rdf:type OWL:Class ;
+     
+     rdfs:subClassOf :Package .
+
+
+
+###  http://www.semanticweb.org/AWP#Package
+
+:Package rdf:type OWL:Class .
+
+
+
+###  http://www.semanticweb.org/AWP#Procurement
+
+:Procurement rdf:type OWL:Class .
+
+
+
+###  http://www.semanticweb.org/AWP#Project_ID
+
+:Project_ID rdf:type OWL:Class ;
+            
+            rdfs:subClassOf :Package .
+
+
+
+###  http://www.semanticweb.org/AWP#Schedule
+
+:Schedule rdf:type OWL:Class .
+
+
+
+###  http://www.semanticweb.org/AWP#ShipmentID
+
+:ShipmentID rdf:type OWL:Class ;
+            
+            rdfs:subClassOf <http://www.semanticweb.org/AWP#Shipment/Delivery> .
+
+
+
+###  http://www.semanticweb.org/AWP#WBS
+
+:WBS rdf:type OWL:Class ;
+     
+     rdfs:subClassOf :Schedule ;
+     
+     OWL:disjointWith <http://www.semanticweb.org/Farghaly/CPC0ntology#Milestone> .
+
+
+
+###  http://www.semanticweb.org/AWP#Zone
+
+:Zone rdf:type OWL:Class .
+
+
+
+###  http://www.semanticweb.org/AWP#Shipment/Delivery
+
+<http://www.semanticweb.org/AWP#Shipment/Delivery> rdf:type OWL:Class ;
+                                                   
+                                                   rdfs:subClassOf :Procurement .
+
+
+
+###  http://www.semanticweb.org/Farghaly/CPC0ntology#Building
+
+<http://www.semanticweb.org/Farghaly/CPC0ntology#Building> rdf:type OWL:Class ;
+                                                           
+                                                           rdfs:subClassOf :Zone .
+
+
+
+###  http://www.semanticweb.org/Farghaly/CPC0ntology#Discpline
+
+<http://www.semanticweb.org/Farghaly/CPC0ntology#Discpline> rdf:type OWL:Class ;
+                                                            
+                                                            rdfs:subClassOf :Package .
+
+
+
+###  http://www.semanticweb.org/Farghaly/CPC0ntology#Milestone
+
+<http://www.semanticweb.org/Farghaly/CPC0ntology#Milestone> rdf:type OWL:Class ;
+                                                            
+                                                            rdfs:subClassOf :Schedule .
+
+
+
+###  http://www.semanticweb.org/Farghaly/CPC0ntology#Site
+
+<http://www.semanticweb.org/Farghaly/CPC0ntology#Site> rdf:type OWL:Class ;
+                                                       
+                                                       rdfs:subClassOf :Zone .
+
+
+
+###  http://www.semanticweb.org/Farghaly/CPC0ntology#Space
+
+<http://www.semanticweb.org/Farghaly/CPC0ntology#Space> rdf:type OWL:Class ;
+                                                        
+                                                        rdfs:subClassOf :Zone .
+
+
+
+###  http://www.semanticweb.org/Farghaly/CPC0ntology#Storey
+
+<http://www.semanticweb.org/Farghaly/CPC0ntology#Storey> rdf:type OWL:Class ;
+                                                         
+                                                         rdfs:subClassOf :Zone .
+
+
+
+
+
+#################################################################
+#
+#    General axioms
+#
+#################################################################
+
+
+[ rdf:type OWL:AllDisjointClasses ;
+  OWL:members ( <http://www.semanticweb.org/Farghaly/CPC0ntology#Building>
+                <http://www.semanticweb.org/Farghaly/CPC0ntology#Site>
+                <http://www.semanticweb.org/Farghaly/CPC0ntology#Space>
+                <http://www.semanticweb.org/Farghaly/CPC0ntology#Storey>
+              )
+] .
+[ rdf:type OWL:AllDisjointClasses ;
+  OWL:members ( :CWA
+                :CWP
+                :EWP
+                :IWP
+                :Project_ID
+                <http://www.semanticweb.org/Farghaly/CPC0ntology#Discpline>
+              )
+] .
+[ rdf:type OWL:AllDisjointClasses ;
+  OWL:members ( :CWA
+                :CWP
+                :EWP
+                :IWP
+                <http://www.semanticweb.org/Farghaly/CPC0ntology#Discpline>
+              )
+] .
+
+
+
+
+###  Generated by the OWL API (version 3.4.5-SNAPSHOT) http://owlapi.sourceforge.net
